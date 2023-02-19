@@ -1,0 +1,101 @@
+/*Dosis Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600&display=swap');
+
+:root{
+	--color-red:#f96d6d;
+	--color-lighter-green:#6bba62;
+	--color-dark-green:#307470;
+	--color-purple:#42476d;
+	--color-lightest-gray:#3c4147;
+	--color-lighter-gray:#363b41;
+	--color-dark-gray:#2e3339;
+	--color-white:#ffffff;
+}
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family: 'Dosis', sans-serif;
+}
+
+body{
+	background-color: var(--color-purple);
+}
+.container{
+	max-width: 650px;
+	background-color: slateblue;
+	margin: 50px auto;
+}
+h2{
+	text-align: center;
+	font-size: 1.5rem;
+	color: var(--color-white);
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+.input-div{
+	width: 100%;
+	padding:10px 20px;
+}
+.input-div input{
+	width: 100%;
+	padding:14px;
+	border:none;
+	font-size:medium;
+}
+.input-div input:focus{
+	outline: 2px solid #4b39bb;
+}
+.input-div #add-button{
+	width: 100%;
+    padding: 10px;
+    border: none;
+    margin: 20px 0px 20px 0px;
+    background-color: var(--color-lighter-green);
+    color: white;
+	font-size:large;
+}
+/***********PREVIEW*************/
+.preview-div{
+	padding: 10px 20px;
+}
+.preview-group{
+	background-color:var(--color-white);
+	border-left: 5px solid var(--color-lighter-green);
+	padding: 14px;
+    display: flex;
+	align-items: center;
+}
+.preview-group .title{
+	width: 90%;
+    border: none;
+	overflow:hidden;
+}
+.preview-group .close-button{
+	width: 10%;
+    border: none;
+    background-color: silver;
+    color: white;
+    border-radius: 9px;
+    padding: 4px 0px 6px;
+}
+.preview-group .close-button:hover{
+	background-color: var(--color-red);
+}
+.toggle-done{
+	background-color: silver;
+	border-left: 5px solid #383838;
+}
+.toggle-done .title span{
+	text-decoration: line-through;
+}
+.toggle-done .close-button{
+	background-color:#383838;
+}
+
+/**MEDIA QUERY***/
+@media (max-width:450px){
+	.container{
+		margin-top:0;
+	}
+}
