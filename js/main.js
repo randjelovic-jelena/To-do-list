@@ -10,7 +10,6 @@ function addNewTask(){
 	{
 	
 		let containerElement=document.querySelector('.container'); 
-		
 		let previewDiv=document.createElement('div');
 		containerElement.appendChild(previewDiv);
 		previewDiv.setAttribute('class','preview-div');
